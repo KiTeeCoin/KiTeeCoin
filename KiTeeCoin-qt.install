@@ -1,0 +1,6 @@
+usr/local/bin/KiTeeCoin-qt usr/bin
+share/pixmaps/KiTeeCoin32.xpm usr/share/pixmaps
+share/pixmaps/KiTeeCoin16.xpm usr/share/pixmaps
+share/pixmaps/KiTeeCoin128.png usr/share/pixmaps
+debian/KiTeeCoin-qt.desktop usr/share/applications
+debian/KiTeeCoin-qt.protocol usr/share/kde4/services/

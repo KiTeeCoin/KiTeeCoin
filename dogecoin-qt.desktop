@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=KiTeeCoin Core
+Comment=Connect to the KiTeeCoin P2P Network
+Comment[de]=Verbinde mit dem KiTeeCoin peer-to-peer Netzwerk
+Comment[fr]=KiTeeCoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=KiTeeCoin, eşten eşe kriptografik sanal para birimi
+Exec=KiTeeCoin-qt %u
+Terminal=false
+Type=Application
+Icon=KiTeeCoin128
+MimeType=x-scheme-handler/KiTeeCoin;
+Categories=Office;Finance;

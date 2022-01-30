@@ -1,0 +1,67 @@
+#!/bin/bash
+#
+#  KiTeecoind The KiTeecoin core server.
+#
+#
+# chkconfig: 345 80 20
+# description: KiTeecoind
+# processname: KiTeecoind
+#
+
+# Source function library.
+. /etc/init.d/functions
+
+# you can override defaults in /etc/sysconfig/KiTeecoind, see below
+if [ -f /etc/sysconfig/KiTeecoind ]; then
+        . /etc/sysconfig/KiTeecoind
+fi
+
+RETVAL=0
+
+prog=KiTeecoind
+# you can override the lockfile via KITEECOIND_LOCKFILE in /etc/sysconfig/KiTeecoind
+lockfile=${KITEECOIND_LOCKFILE-/var/lock/subsys/KiTeecoind}
+
+# KiTeecoind defaults to /usr/bin/KiTeecoind, override with KITEECOIND_BIN
+KiTeecoind=${KITEECOIND_BIN-/usr/bin/KiTeecoind}
+
+# KiTeecoind opts default to -disablewallet, override with KITEECOIND_OPTS
+KiTeecoind_opts=${KITEECOIND_OPTS--disablewallet}
+
+start() {
+    echo -n $"Starting $prog: "
+    daemon $DAEMONOPTS $KiTeecoind $KiTeecoind_opts
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && touch $lockfile
+    return $RETVAL
+}
+
+stop() {
+    echo -n $"Stopping $prog: "
+    killproc $prog
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && rm -f $lockfile
+    return $RETVAL
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    status)
+        status $prog
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    *)
+        echo "Usage: service $prog {start|stop|status|restart}"
+        exit 1
+        ;;
+esac

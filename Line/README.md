@@ -49,6 +49,6 @@ be written to a cache so that the blockchain doesn't have to be seeked again.
 This option specifies the cache size. (Default: `100*1000*1000 bytes`)
 * `rev_hash_bytes`: If true, the block hash list written by linearize-hashes.py
 will be byte-reversed when read by linearize-data.py. See the linearize-hashes
-entry for more information.
+entry for more information. 
 * `split_timestamp`: Split blockchain files when a new month is first seen, in
 addition to reaching a maximum file size (`max_out_sz`).

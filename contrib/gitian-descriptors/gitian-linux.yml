@@ -1,5 +1,5 @@
 ---
-name: "dogecoin-linux-1.14"
+name: "KiTeecoin-linux-1.14"
 enable_cache: true
 suites:
 - "bionic"
@@ -29,8 +29,8 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://github.com/dogecoin/dogecoin.git"
-  "dir": "dogecoin"
+- "url": "https://github.com/KiTeecoin/KiTeecoin.git"
+  "dir": "KiTeecoin"
 files: []
 script: |
 

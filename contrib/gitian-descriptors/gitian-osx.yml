@@ -1,5 +1,5 @@
 ---
-name: "dogecoin-osx-1.14"
+name: "KiTeecoin-osx-1.14"
 enable_cache: true
 suites:
 - "bionic"
@@ -28,8 +28,8 @@ packages:
 - "python-setuptools"
 - "fonts-tuffy"
 remotes:
-- "url": "https://github.com/dogecoin/dogecoin.git"
-  "dir": "dogecoin"
+- "url": "https://github.com/KiTeecoin/KiTeecoin.git"
+  "dir": "KiTeecoin"
 files:
 - "MacOSX10.11.sdk.tar.gz"
 script: |

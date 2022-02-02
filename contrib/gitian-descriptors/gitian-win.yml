@@ -1,5 +1,5 @@
 ---
-name: "dogecoin-win-1.14"
+name: "KiTeecoin-win-1.14"
 enable_cache: true
 suites:
 - "bionic"
@@ -23,8 +23,8 @@ packages:
 - "python"
 - "rename"
 remotes:
-- "url": "https://github.com/dogecoin/dogecoin.git"
-  "dir": "dogecoin"
+- "url": "https://github.com/KiTeecoin/KiTeecoin.git"
+  "dir": "KiTeecoin"
 files: []
 script: |
   WRAP_DIR=$HOME/wrapped

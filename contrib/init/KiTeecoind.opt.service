@@ -3,17 +3,17 @@
 #
 # The relevant paths are:
 #
-#/opt/dogecoin/dogecoind
-#/etc/opt/dogecoin/
-#/var/opt/dogecoin/
+#/opt/dogecoin/KiTeecoind
+#/etc/opt/KiTeecoin/
+#/var/opt/KiTeecoin/
 
 [Unit]
-Description=Dogecoin's distributed currency daemon
+Description=KiTeecoin's distributed currency daemon
 After=network.target
 
 [Service]
 Type=simple
-ExecStart=/opt/dogecoin/bin/dogecoind -conf=/etc/opt/dogecoin/dogecoin.conf -datadir=/var/opt/dogecoin
+ExecStart=/opt/KiTeecoin/bin/KiTeecoind -conf=/etc/opt/KiTeecoin/KiTeecoin.conf -datadir=/var/opt/KiTeecoin
 
 KillSignal=SIGINT
 Restart=always
@@ -23,8 +23,8 @@ TimeoutStartSec=5
 StartLimitIntervalSec=120
 StartLimitBurst=5
 
-User=dogecoin
-Group=dogecoin
+User=KiTeecoin
+Group=KiTeecoin
 
 ### Restrict resource consumption
 MemoryAccounting=yes

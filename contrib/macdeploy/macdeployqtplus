@@ -31,7 +31,7 @@ class FrameworkInfo(object):
         self.binaryName = ""
         self.binaryPath = ""
         self.version = ""
-        self.installName = ""
+        self.installName = "" 
         self.deployedInstallName = ""
         self.sourceFilePath = ""
         self.destinationDirectory = ""

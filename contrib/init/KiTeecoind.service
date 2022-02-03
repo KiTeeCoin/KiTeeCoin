@@ -27,7 +27,7 @@ Group=KiTeecoin
 
 ### Restrict resource consumption
 MemoryAccounting=yes
-MemoryLimit=3g
+MemoryLimit=3g 
 
 ### Restrict access to host file system.
 #

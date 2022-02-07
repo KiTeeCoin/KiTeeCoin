@@ -128,7 +128,7 @@ def sync_blocks(rpc_connections, *, wait=1, timeout=60):
 
     sync_blocks needs to be called with an rpc_connections set that has least
     one node already synced to the latest, stable tip, otherwise there's a
-    chance it might return before all nodes are stably synced.
+    chance it might return before all nodes are stably synced..
     """
     # Use getblockcount() instead of waitforblockheight() to determine the
     # initial max height because the two RPCs look at different internal global

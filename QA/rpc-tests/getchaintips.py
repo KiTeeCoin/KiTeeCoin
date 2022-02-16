@@ -32,7 +32,7 @@ class GetChainTipsTest (BitcoinTestFramework):
 
         tips = self.nodes[1].getchaintips ()
         assert_equal (len (tips), 1)
-        shortTip = tips[0]
+        shortTip = tips[0] 
         assert_equal (shortTip['branchlen'], 0)
         assert_equal (shortTip['height'], 130)
         assert_equal (tips[0]['status'], 'active')

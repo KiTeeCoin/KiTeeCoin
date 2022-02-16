@@ -30,7 +30,7 @@ class MempoolCoinbaseTest(BitcoinTestFramework):
         self.sync_all()
 
     def run_test(self):
-        start_count = self.nodes[0].getblockcount()
+        start_count = self.nodes[0].getblockcount() 
 
         # Mine three blocks. After this, nodes[0] blocks
         # 101, 102, and 103 are spend-able.

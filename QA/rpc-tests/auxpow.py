@@ -31,7 +31,7 @@ class AuxPOWTest (BitcoinTestFramework):
     def run_test(self):
         print("Mining blocks...")
 
-        # 1. mine an auxpow block before auxpow is allowed, expect: fail
+        # 1. mine an auxpow block before auxpow is allowed, expect: fail 
         try:
             scrypt_auxpow.mineScryptAux(self.nodes[0], "00", True)
         except JSONRPCException as ex:

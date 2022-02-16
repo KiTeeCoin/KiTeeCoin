@@ -30,7 +30,7 @@ class SignRawTransactionsTest(BitcoinTestFramework):
 
         inputs = [
             # Valid pay-to-pubkey scripts
-            {'txid': 'f9951bb9536cdabec3ad1b9ceaf8170051bd80372db22cfb59901036526891b0', 'vout': 0,
+            {'txid': 'f9951bb9536cdabec3ad1b9ceaf8170051bd80372db22cfb59901036526891b0', 'vout': 0, 
              'scriptPubKey': '2102de5b9a06f9c892706943614ab4c0f29c1b1fb52170aac9c04e8df5266e42e415ac'},
         ]
 
